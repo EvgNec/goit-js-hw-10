@@ -61,5 +61,7 @@ function createOneCountryMarkup(countries) {
 }
 
 function error() {
+    countryListRef.innerHTML = '';
+    countryInfoRef.innerHTML = '';
   return Notify.failure('Oops, there is no country with that name', { timeout: 1000 });
 }
